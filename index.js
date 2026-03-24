@@ -1,4 +1,4 @@
-const { Telegraf, Markup } = require('telegraf');
+hconst { Telegraf, Markup } = require('telegraf');
 const express = require('express');
 const axios = require('axios');
 
@@ -35,7 +35,7 @@ const azkar = {
 const mainKeyboard = Markup.keyboard([['☀️ أذكار الصباح'], ['🌙 أذكار المساء']]).resize();
 
 bot.start((ctx) => {
-    ctx.reply('🌹 مرحباً بك يا عبد القادر في بوت الأذكار\nاختر من القائمة بالأسفل:', mainKeyboard);
+    ctx.reply('🌹مرحباً بك في حصن المسلم\nاختر من القائمة بالأسفل:', mainKeyboard);
 });
 
 // 6. دالة الإرسال (تم تحسينها لتجنب أي خطأ)
