@@ -12,7 +12,7 @@ app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
 // 3. نظام الاستيقاظ الذاتي (Self-Ping) لمنع النوم
-const URL = 'https://my-telegram-bot-bviw.onrender.com';
+const URL = 'https://my-telegram-bot-bvIw.onrender.com';
 setInterval(() => {
     axios.get(URL).then(() => console.log('Keep-Alive: Success')).catch(() => {});
 }, 1000 * 60 * 5); // كل 5 دقائق
