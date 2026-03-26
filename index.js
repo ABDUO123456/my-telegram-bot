@@ -5,7 +5,7 @@ const axios = require('axios');
 // 1. إعداد السيرفر لضمان بقاء البوت حياً على Render
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.get('/', (req, res) => res.send('Bot is Alive! 🚀'));
+app.get('/', (req, res) => res.status(200).send('OK'));
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 
 // 2. إعداد البوت (تأكد من وضع BOT_TOKEN في إعدادات Render)
