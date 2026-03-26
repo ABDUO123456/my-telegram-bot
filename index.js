@@ -65,3 +65,7 @@ process.once('SIGTERM', () => {
     bot.stop('SIGTERM');
     process.exit();
 });
+bot.launch();
+// لضمان إغلاق البوت بنظافة عند التحديث
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
