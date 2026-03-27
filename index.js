@@ -83,7 +83,7 @@ const mainMenu = Markup.keyboard([
 ]).resize();
 
 bot.start((ctx) => {
-    ctx.reply(`✨ **أنيس المسلم**\n\nمرحباً بك يا ${ctx.from.first_name}، رفيقك في الذكر والعبادة.\nاختر من القائمة أدناه:`, {
+    ctx.reply(`✨ **حصن المسلم**\n\nمرحباً بك يا ${ctx.from.first_name}، رفيقك في الذكر والعبادة.\nاختر من القائمة أدناه:`, {
         parse_mode: 'Markdown',
         ...mainMenu
     });
